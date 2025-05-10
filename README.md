@@ -29,7 +29,19 @@ Feature scaling: The numerical features are standardized using **StandardScaler*
 
 Data balancing: This is important to avoid bias in regression and classification. Logistic regression is configured to use **balanced class weight** so that it assigns more importance to cases from minority class during training.  
 
-Two models were build using **Logistic Regression and Decision Tree algorithms** and thereafter hyperparameters were employed to tune the two models.
+Two models were build using **Logistic Regression and Decision Tree algorithms** and thereafter hyperparameters were employed to tune the two models. 
 
-After modeling with the 2 algorithms, Logistic Regression performed best with a ROC AUC of 0.85 which identified strong predictors of the vaccine uptake.
+Hyperparameters are crucial for optimizing the performance of machine learning models. A combination of  **Regularization Strength (C), Penalty type and Solver** were used.
+
+## Evaluation
+
+After modeling with the 2 algorithms, Logistic Regression performed best with a ROC AUC of 0.85 which identified strong predictors of the vaccine uptake. The ROC AUC score shows how well the model separates the two classes,that is the vaccinated vs non-vaccinated. 
+
+Logistic regression was consistent in showing better class separation and generalization on the validation set. Also, it provided clear, interpretable coefficients showing the direction and strength of influence for each feature. This gives the much needed insights to stakeholders to help them understand why certain populations are more or less likely to get vaccinations.
+
+## Conclusion
+Logistic regression was selected as the preferred baseline model due to its strong performance, interpretability and alignment with public health applications. The model provides a framework for identifying key drivers of vaccine uptake, enabling evidence based decision making while establishing a reliable foundation for iterative refinement in public health initiatives.
+
+
+
 
